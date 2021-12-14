@@ -1,0 +1,17 @@
+{
+  "name": "skr-canvas-vercel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "LongYinan",
+    "email": "github@lyn.one"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.17"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.12.1",
+    "vercel": "^23.1.2"
+  }
+}

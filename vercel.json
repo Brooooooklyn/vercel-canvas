@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/canvas.js": {
+      "includeFiles": "api/assets/**"
+    }
+  }
+}
