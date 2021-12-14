@@ -105,7 +105,7 @@ export default async function generateImage(req, res) {
     encodeType = 'png'
   }
   // @ts-expect-error
-  const buffer = await canvas.encode(encodeType, { quality: 90 })
+  const buffer = await canvas.encode(encodeType)
   res.setHeader('Content-Type', MIME_MAP[encodeType])
   res.setHeader('Content-Disposition', 'inline')
   res.send(buffer)
