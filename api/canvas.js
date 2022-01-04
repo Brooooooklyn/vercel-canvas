@@ -15,9 +15,11 @@ GlobalFonts.registerFromPath(join(__dirname, 'assets', 'Iosevka-Medium.ttf'))
 GlobalFonts.registerFromPath(join(__dirname, 'assets', 'Iosevka.ttf'))
 GlobalFonts.registerFromPath(join(__dirname, 'assets', 'Iosevka-Thin.ttf'))
 
-const NAPI_RS = readFileSync(join(__dirname, 'assets', 'napi-rs.png'))
+const NAPI_RS = readFileSync(join(__dirname, 'assets', 'napi-rs.svg'))
 const NAPI_RS_IMAGE = new Image()
 NAPI_RS_IMAGE.src = NAPI_RS
+NAPI_RS_IMAGE.width = 320
+NAPI_RS_IMAGE.height = 320
 
 const VERCEL_PATH = new Path2D(
   'M37 0l37 64H0L37 0zM159.6 34c0-10.3-7.6-17.5-18.5-17.5s-18.5 7.2-18.5 17.5c0 10.1 8.2 17.5 19.5 17.5 6.2 0 11.8-2.3 15.4-6.5l-6.8-3.9c-2.1 2.1-5.2 3.4-8.6 3.4-5 0-9.3-2.7-10.8-6.8l-.3-.7h28.3c.2-1 .3-2 .3-3zm-28.7-3l.2-.6c1.3-4.3 5.1-6.9 9.9-6.9 4.9 0 8.6 2.6 9.9 6.9l.2.6h-20.2zM267.3 34c0-10.3-7.6-17.5-18.5-17.5s-18.5 7.2-18.5 17.5c0 10.1 8.2 17.5 19.5 17.5 6.2 0 11.8-2.3 15.4-6.5l-6.8-3.9c-2.1 2.1-5.2 3.4-8.6 3.4-5 0-9.3-2.7-10.8-6.8l-.3-.7H267c.2-1 .3-2 .3-3zm-28.7-3l.2-.6c1.3-4.3 5.1-6.9 9.9-6.9 4.9 0 8.6 2.6 9.9 6.9l.2.6h-20.2zM219.3 28.3l6.8-3.9c-3.2-5-8.9-7.8-15.8-7.8-10.9 0-18.5 7.2-18.5 17.5s7.6 17.5 18.5 17.5c6.9 0 12.6-2.8 15.8-7.8l-6.8-3.9c-1.8 3-5 4.7-9 4.7-6.3 0-10.5-4.2-10.5-10.5s4.2-10.5 10.5-10.5c3.9 0 7.2 1.7 9 4.7zM282.3 5.6h-8v45h8v-45zM128.5 5.6h-9.2L101.7 36 84.1 5.6h-9.3L101.7 52l26.8-46.4zM185.1 25.8c.9 0 1.8.1 2.7.3v-8.5c-6.8.2-13.2 4-13.2 8.7v-8.7h-8v33h8V36.3c0-6.2 4.3-10.5 10.5-10.5z'
@@ -70,31 +72,31 @@ export default async function generateImage(req, res) {
   ctx.fillText('ON', 1276, 750)
   ctx.fillStyle = 'white'
   ctx.font = '400 28px Iosevka'
-  ctx.fillText('Powered by', 740, 960)
+  ctx.fillText('Powered by', 740, 966)
   ctx.font = '300 140px Iosevka'
   ctx.fillStyle = '#dea584'
   ctx.fillText('', 910, 1000)
-  ctx.fillStyle = '#3C873A'
-  ctx.font = '160px Iosevka'
-  ctx.fillText('', 1020, 1000)
+  ctx.drawImage(NAPI_RS_IMAGE, 1020, 898, 105, 105)
   ctx.fillStyle = 'white'
   ctx.save()
-  ctx.translate(1220, 920)
-  ctx.scale(0.75, 0.75)
+  ctx.translate(1160, 920)
+  ctx.scale(0.85, 0.85)
   ctx.fill(VERCEL_PATH)
   ctx.restore()
-  ctx.drawImage(NAPI_RS_IMAGE, 1480, 875, 135, 135)
-  ctx.font = '700 60px Iosevka'
   const gradient = ctx.createLinearGradient(
-    1670,
-    960 + 22,
-    1670 + 120,
-    960 + 22
+    1455,
+    970 + 22,
+    1455 + 120,
+    970 + 22
   )
+  ctx.font = '700 54px Iosevka'
   gradient.addColorStop(0, '#f7ff00')
   gradient.addColorStop(1, '#db36a4')
   ctx.fillStyle = gradient
-  ctx.fillText('SKIA', 1670, 960)
+  ctx.fillText('SKIA', 1455, 970)
+  ctx.font = '220px Iosevka'
+  ctx.fillStyle = '#3C873A'
+  ctx.fillText('', 1620, 1018)
   const { type = 'png' } = req.query
   /** @type {'png' | 'webp' | 'avif'} */
   let encodeType
