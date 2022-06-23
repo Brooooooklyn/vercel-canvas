@@ -8,10 +8,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.17"
+    "@napi-rs/canvas": "^0.1.23"
   },
   "devDependencies": {
-    "@vercel/node": "^1.12.1",
-    "vercel": "^23.1.2"
+    "@vercel/node": "^2.2.0",
+    "vercel": "^25.1.0"
   }
 }
