@@ -374,10 +374,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:8.4.12":
-  version: 8.4.12
-  resolution: "@vercel/build-utils@npm:8.4.12"
-  checksum: 10c0/ed551c36f334d7b391f042bfe76a0b9854e2de5f5c392d7f386d22b5e075dd0d672fc66566332c54ce301cb415ff482ee75d61d4c69388e9fec658f24baf8bc5
+"@vercel/build-utils@npm:8.7.0":
+  version: 8.7.0
+  resolution: "@vercel/build-utils@npm:8.7.0"
+  checksum: 10c0/1e45277fe8ae875f47b2b719647991a3aa2fca3297736866b2acf1a99f5cb1682659a5664b95bfdb2ca214b2da59e7823bfdc394cf90f5981307254baf99cad8
   languageName: node
   linkType: hard
 
@@ -385,13 +385,6 @@ __metadata:
   version: 9.1.0
   resolution: "@vercel/build-utils@npm:9.1.0"
   checksum: 10c0/233b11dd53f4fb411fb61366860a3253e2b387fffebfce2e61fa81765fbf027bb92adae49aa82a6f64ed29ea94089feaea6ddd1be521fa30a9e73b591d704b5c
-  languageName: node
-  linkType: hard
-
-"@vercel/error-utils@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@vercel/error-utils@npm:2.0.2"
-  checksum: 10c0/bc08c12484e380a13f65a24fffc6ecd3cb14fe2f14c5b39a9250d04a67d37a7edafcbb8fad8162aea4817ae8e9bb5190fff62e9c58001af2e30eb19da2da59e0
   languageName: node
   linkType: hard
 
@@ -553,15 +546,15 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^3.2.24":
-  version: 3.2.24
-  resolution: "@vercel/node@npm:3.2.24"
+  version: 3.2.29
+  resolution: "@vercel/node@npm:3.2.29"
   dependencies:
     "@edge-runtime/node-utils": "npm:2.3.0"
     "@edge-runtime/primitives": "npm:4.1.0"
     "@edge-runtime/vm": "npm:3.2.0"
     "@types/node": "npm:16.18.11"
-    "@vercel/build-utils": "npm:8.4.12"
-    "@vercel/error-utils": "npm:2.0.2"
+    "@vercel/build-utils": "npm:8.7.0"
+    "@vercel/error-utils": "npm:2.0.3"
     "@vercel/nft": "npm:0.27.3"
     "@vercel/static-config": "npm:3.0.0"
     async-listen: "npm:3.0.0"
@@ -576,7 +569,7 @@ __metadata:
     ts-node: "npm:10.9.1"
     typescript: "npm:4.9.5"
     undici: "npm:5.28.4"
-  checksum: 10c0/7cf20fcb620e6c0d331810fa7e5c6535d0fda57cfcd760b40a2d81dfcb83757871cff0131bdd9ec2d0abf751a4cf3dc5aacedd85a4924f06c0152aec0945a2e6
+  checksum: 10c0/a441bd382c523965029db604110245d522c7c522beec0be877f8d4fe09513bd9c917fafeb8fca578032e50e955dd91272c763a518e7402a1254f99eb18cfd578
   languageName: node
   linkType: hard
 
