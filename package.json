@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vercel/node": "^5.0.0",
-    "vercel": "^55.0.0"
+    "vercel": "^56.0.0"
   },
   "packageManager": "yarn@4.17.1"
 }
