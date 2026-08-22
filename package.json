@@ -11,7 +11,7 @@
     "@napi-rs/canvas": "^1.0.0"
   },
   "devDependencies": {
-    "@vercel/node": "^5.0.0",
+    "@vercel/node": "^6.0.0",
     "vercel": "^59.0.0"
   },
   "packageManager": "yarn@4.18.0"
