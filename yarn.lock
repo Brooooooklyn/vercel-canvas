@@ -1573,9 +1573,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^16.0.0":
-  version: 16.0.1
-  resolution: "@vercel/node@npm:16.0.1"
+"@vercel/node@npm:^20.0.0":
+  version: 20.0.0
+  resolution: "@vercel/node@npm:20.0.0"
   dependencies:
     "@edge-runtime/node-utils": "npm:2.3.0"
     "@edge-runtime/primitives": "npm:4.1.0"
@@ -1583,7 +1583,7 @@ __metadata:
     "@types/node": "npm:20.11.0"
     "@vercel/error-utils": "npm:2.2.1"
     "@vercel/nft": "npm:1.10.0"
-    "@vercel/static-config": "npm:3.4.3"
+    "@vercel/static-config": "npm:3.4.4"
     async-listen: "npm:3.0.0"
     cjs-module-lexer: "npm:1.2.3"
     edge-runtime: "npm:2.5.9"
@@ -1599,8 +1599,8 @@ __metadata:
     typescript: "npm:typescript@5.9.3"
     undici: "npm:5.28.4"
   peerDependencies:
-    "@vercel/build-utils": 14.13.1
-  checksum: 10c0/5b9b79c0b044609ebd9eb5bd0108b58cc5b908dfbc0e3bc8f7b60b491a2a60a4ae0139e0be4c02c52d2eb8eaa093be13a83321792708c441c1efaae57b05b5d7
+    "@vercel/build-utils": 14.17.0
+  checksum: 10c0/2ee4e0ae099110673dd60b0014c9c97887a7c5405791c00a1b8a816cfe6ee1f62f20513e55325582aceb7d793e6ccd4797c9b96e17666881bb43c1ee52ada171
   languageName: node
   linkType: hard
 
@@ -1750,6 +1750,18 @@ __metadata:
     oxc-parser: "npm:0.121.0"
     ts-morph: "npm:12.0.0"
   checksum: 10c0/84cc142386eb610454cdc8a629a9fd42fcdc87838af6de16c66fa851090b8a44ff68e0e21b4d813b1da11f81356aa702391fc2f9fc06c997df38e6fe25d2ed5f
+  languageName: node
+  linkType: hard
+
+"@vercel/static-config@npm:3.4.4":
+  version: 3.4.4
+  resolution: "@vercel/static-config@npm:3.4.4"
+  dependencies:
+    ajv: "npm:8.6.3"
+    json-schema-to-ts: "npm:1.6.4"
+    oxc-parser: "npm:0.121.0"
+    ts-morph: "npm:12.0.0"
+  checksum: 10c0/7ca78bafaef2a2eac47e54cc8061f133b5571273ff8ccb0157afe6a663a78adca9c648d32d062084fb85f89f5aeb73505b2bc2046195bdcbf1fb385aeab09585
   languageName: node
   linkType: hard
 
@@ -3615,7 +3627,7 @@ __metadata:
   resolution: "skr-canvas-vercel@workspace:."
   dependencies:
     "@napi-rs/canvas": "npm:^1.0.0"
-    "@vercel/node": "npm:^16.0.0"
+    "@vercel/node": "npm:^20.0.0"
     vercel: "npm:^59.0.0"
   languageName: unknown
   linkType: soft
