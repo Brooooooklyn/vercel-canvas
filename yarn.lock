@@ -1740,7 +1740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:29.0.1, @vercel/node@npm:^29.0.0":
+"@vercel/node@npm:29.0.1":
   version: 29.0.1
   resolution: "@vercel/node@npm:29.0.1"
   dependencies:
@@ -1768,6 +1768,37 @@ __metadata:
   peerDependencies:
     "@vercel/build-utils": 15.2.1
   checksum: 10c0/65b5958adb89891cb913d3367407e40e302d625b54f7007f62264a7566239d3e55aea8ff4f7e9c989b1b0e959d8ee01320a357946c36f0ad902cb0e1bff4a941
+  languageName: node
+  linkType: hard
+
+"@vercel/node@npm:^30.0.0":
+  version: 30.0.0
+  resolution: "@vercel/node@npm:30.0.0"
+  dependencies:
+    "@edge-runtime/node-utils": "npm:2.3.0"
+    "@edge-runtime/primitives": "npm:4.1.0"
+    "@edge-runtime/vm": "npm:3.2.0"
+    "@types/node": "npm:20.11.0"
+    "@vercel/error-utils": "npm:2.2.1"
+    "@vercel/nft": "npm:1.10.0"
+    "@vercel/static-config": "npm:3.4.4"
+    async-listen: "npm:3.0.0"
+    cjs-module-lexer: "npm:1.2.3"
+    edge-runtime: "npm:2.5.9"
+    es-module-lexer: "npm:1.4.1"
+    esbuild: "npm:0.27.0"
+    etag: "npm:1.8.1"
+    mime-types: "npm:2.1.35"
+    node-fetch: "npm:2.6.9"
+    path-to-regexp: "npm:6.1.0"
+    path-to-regexp-updated: "npm:path-to-regexp@6.3.0"
+    ts-morph: "npm:12.0.0"
+    tsx: "npm:4.21.0"
+    typescript: "npm:typescript@5.9.3"
+    undici: "npm:5.28.4"
+  peerDependencies:
+    "@vercel/build-utils": 15.3.0
+  checksum: 10c0/7fc7c00966818128707759a59ca5da7485d0a0de58ee047b43efd1af5f8b9dda94f37d354f37391a40f80e7a8da3ee217dcf2d4e720b6485592ece542104ef93
   languageName: node
   linkType: hard
 
@@ -3837,7 +3868,7 @@ __metadata:
   resolution: "skr-canvas-vercel@workspace:."
   dependencies:
     "@napi-rs/canvas": "npm:^1.0.0"
-    "@vercel/node": "npm:^29.0.0"
+    "@vercel/node": "npm:^30.0.0"
     vercel: "npm:^65.0.0"
   languageName: unknown
   linkType: soft
