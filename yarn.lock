@@ -1771,9 +1771,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^30.0.0":
-  version: 30.0.0
-  resolution: "@vercel/node@npm:30.0.0"
+"@vercel/node@npm:^32.0.0":
+  version: 32.0.0
+  resolution: "@vercel/node@npm:32.0.0"
   dependencies:
     "@edge-runtime/node-utils": "npm:2.3.0"
     "@edge-runtime/primitives": "npm:4.1.0"
@@ -1797,8 +1797,8 @@ __metadata:
     typescript: "npm:typescript@5.9.3"
     undici: "npm:5.28.4"
   peerDependencies:
-    "@vercel/build-utils": 15.3.0
-  checksum: 10c0/7fc7c00966818128707759a59ca5da7485d0a0de58ee047b43efd1af5f8b9dda94f37d354f37391a40f80e7a8da3ee217dcf2d4e720b6485592ece542104ef93
+    "@vercel/build-utils": 15.5.0
+  checksum: 10c0/bc0dcc14385f7b5d8280e7336190777dff2876a6deb9eb551bbf838ba1e6015f863b45dedf1442fd778eef19b5e308aa8f500b348d8f1eae5732c4fe4ee3d887
   languageName: node
   linkType: hard
 
@@ -3868,7 +3868,7 @@ __metadata:
   resolution: "skr-canvas-vercel@workspace:."
   dependencies:
     "@napi-rs/canvas": "npm:^1.0.0"
-    "@vercel/node": "npm:^30.0.0"
+    "@vercel/node": "npm:^32.0.0"
     vercel: "npm:^65.0.0"
   languageName: unknown
   linkType: soft
